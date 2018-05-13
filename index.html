@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="script.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<title>iCalc</title>
+	<link href="http://allfont.ru/allfont.css?fonts=digital-7" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div id="calc_body" onmousedown="click_check = true" onmouseup="click_check = false" onmousemove="move_object('calc_body')">
+	<div class="nameCalc">iCalc</div>
+	<div class="top_row">
+		<div id="calc_display"></div>
+	</div>
+
+<div class="bottom_row">
+	<div class="nums_block">
+		<div class="action_row">
+				<button id="clear" onclick="clearALL()">С</button>
+				<button id="division" onclick="division()">/</button>
+				<button id="mult" onclick="mult()">*</button>
+		
+			</div>
+		<div class="nums_row1">
+				<button id="7" onclick="print_int(7)">7</button>
+				<button id="8" onclick="print_int(8)">8</button>
+				<button id="9" onclick="print_int(9)">9</button>
+		</div>
+		<div class="nums_row2">
+				<button id="4" onclick="print_int(4)">4</button>
+				<button id="5" onclick="print_int(5)">5</button>
+				<button id="6" onclick="print_int(6)">6</button>
+		</div>
+		<div class="nums_row3">
+				<button id="1" onclick="print_int(1)">1</button>
+				<button id="2" onclick="print_int(2)">2</button>
+				<button id="3" onclick="print_int(3)">3</button>
+		</div>
+		<div class="nums_row4">
+				<button id="0" onclick="print_int(0)">0</button>
+				<button id="00" onclick="print_int('00')">00</button>
+				<button id="del" onclick="print_int('.')">.</button>
+		</div>
+
+	</div>
+	<div class="right_section">
+			<button id="minus" onclick="minus()">-</button>
+			<button id="plus" onclick="plus()">+</button>
+
+			<button id="equal" onclick="equal()">=</button>
+
+	</div>
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+body{
+	background: url(img/wood.jpg);
+	background-repeat: repeat
+}
+
+#calc_body{
+	width: 263px;
+	height: 430px;
+	display: flex;
+	flex-direction: column;
+	background: #52555e;
+	padding: 0px 15px 43px 22px;
+	border-radius: 10px;
+	position: absolute;
+	top: 200px;
+	left: 200px;
+}
+button{
+	height: 60px;
+	width: 60px;
+	border-radius: 5px;
+	color: #bdbdbd;
+	font-weight: bold;
+	font-size: 26px;
+	background: #1c1d22;
+	border: none;
+	outline: none;
+	box-shadow: 2px 2px 2px black;
+	transition: box-shadow .1s;
+}
+
+.top_row{
+	display: block;
+	margin-bottom: 88px;
+	height: 50px;
+
+}
+
+
+
+.bottom_row {
+	display: flex;
+}
+
+.nums_block div {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px
+}
+
+.right_section {
+	width: 27%;
+	height: 319px;
+	margin-left: 5px;
+	justify-content: space-between;
+
+}
+
+
+.nums_block {
+	width: 75%;
+}
+
+#equal {
+	height: 124px;
+}
+
+#plus {
+	height: 126px;
+	margin-bottom: 5px;
+}
+
+#minus {
+	height: 60px;
+	margin-bottom: 5px;
+}
+#calc_display{
+	text-align: right;
+	padding-top: 5px;
+	font-family: 'digital-7';
+	font-size: 60px;
+	background: #60563a;
+	height: 50px;
+	width: 234px;
+	border-bottom: 10px solid #1c1d22;
+	border-right: 10px solid #1c1d22;
+	border-left: 10px solid #1c1d22;
+	border-top: 65px solid #1c1d22;
+}
+
+#clear {
+	background: #6f0602;
+}
+
+#division, #mult, #minus ,#plus ,#equal {
+	background: #bdbdbd;
+	color: black
+}
+
+.nameCalc {
+    position: absolute;
+    color: gray;
+    font-family: 'digital-7';
+    font-size: 22px;
+    margin-left: 200px;
+    margin-top: 43px;
+}
+
+button:hover{
+
+}
+button:active{
+	box-shadow: 0px 0px 0px black;
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+	font-size: 23px;
+}

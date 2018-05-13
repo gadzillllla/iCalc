@@ -1,2 +1,3 @@
 # iCalc
-office calc
+simple office calc. clic to math!!!
+
