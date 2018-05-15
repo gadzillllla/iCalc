@@ -8,13 +8,24 @@ var click_check = false;
 
 const print_int = (num) => {
 var i = document.getElementById('calc_display');
+var j = 0;
 a += num;
 console.log(a);
 if (a.length < 9){
 	i.innerHTML = a;
 }
-else i.innerHTML = 'Err'
+else { i.innerHTML = 'Err'
+
+	while (j < 9) {
+		a += num[j];
+		j++;
+		console.log(a);
+		}
+	}
 }
+
+
+
 
 const plus = () => {
 	temp_int = a;
@@ -51,7 +62,7 @@ const equal = () => {
 			result = Number(temp_int) * Number(a);
 			break;
 		case 'division_action':
-			result = Number(temp_int) / Number(a);
+			result =  Math.round(Number(temp_int) / Number(a)*1000000)/1000000;
 			break;
 
 	}
@@ -65,12 +76,3 @@ const clearALL = () => {
 	i.innerHTML = result;
 }
 
-const move_object = (elem) => {
-	var calcBody = document.getElementById(elem);
-	if (click_check === true) {
-		var X = event.clientX - 20 +"px";
-		var Y = event.clientY - 20 +"px";
-		calcBody.style.left = X;
-		calcBody.style.top = Y;
-	}
-}
